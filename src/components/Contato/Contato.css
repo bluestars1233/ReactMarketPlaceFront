@@ -9,8 +9,12 @@
   margin-right: 80px;
 }
 
-p {
+.paragrafoAreas {
   font-size: 1.2em;
+  color: #a3a09d;
+}
+.subTituloContatos{
+  color: #a3a09d;
 }
 
 .areaFeedback {
