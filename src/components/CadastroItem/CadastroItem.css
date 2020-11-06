@@ -6,10 +6,24 @@
     display: flex;
     
 }
-input{
+.flexNomeDescricao{
+    display: flex;
+    flex-direction: column;
+}
+.flexPagamentoPreco{
+    display: flex;        
+    align-items: center;
+}
+
+.inputDadosProduto{
     margin: 10px auto;
     width: 15vw;
     height: 3vh;
+}
+.inputNomeDescricao{
+    margin: 10px auto;    
+    height: 3vh;
+    width: 20vw;
 }
 button{
     background-color: #449694;

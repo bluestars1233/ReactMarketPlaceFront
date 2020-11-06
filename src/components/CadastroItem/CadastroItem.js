@@ -2,7 +2,7 @@ import React from 'react'
 import './CadastroItem.css'
 import axios from 'axios'
 
-const url = 'https://us-central1-labenu-apis.cloudfunctions.net/fourUsedTwo/products'
+const url = 'https://us-central1-labenu-apis.cloudfunctions.net/fourUsedOne/products'
 
 class CadastroItem extends React.Component{
     state={
@@ -79,9 +79,7 @@ class CadastroItem extends React.Component{
                 inputImagem4:'',
                 inputPagamento:''})
         })
-        .catch((erro)=>{
-            console.log('Body',body)
-            console.log('Erro',erro.message)
+        .catch(()=>{                        
             alert('Erro - Verifique se os campos estão corretos !')
         })
     }
@@ -90,46 +88,51 @@ class CadastroItem extends React.Component{
         return(
             <div>
                 <div id='DivInputCadastro'>
-                    <div>
-                        <input 
+                    <div className='flexNomeDescricao'>
+                        <input className='inputNomeDescricao'
                         placeholder='Nome Produto' value={this.state.inputNome} onChange={this.onChangeInputNome}></input>
 
-                        <input 
+                        <input className='inputNomeDescricao'
                         placeholder='Descrição' value={this.state.inputDescricao} onChange={this.onChangeInputDescricao} >
                         </input>
                     </div>
+                    <div className='flexPagamentoPreco'>
+                        <input className='inputDadosProduto'
+                        placeholder='Formas de Pagamento' value={this.state.inputPagamento} onChange={this.onChangeInputPagamento}>                        
+                        </input>
+                        <input className='inputDadosProduto'
+                        placeholder='Preço' type='number' value={this.state.inputPreco} onChange={this.onChangeInputPreco}>                        
+                        </input>
+                    </div>
                     
-                    <input 
-                    placeholder='Formas de Pagamento' value={this.state.inputPagamento} onChange={this.onChangeInputPagamento}>                        
-                    </input>
-                    <input 
-                    placeholder='Preço' type='number' value={this.state.inputPreco} onChange={this.onChangeInputPreco}>                        
-                    </input>
+                    <div>
+                        <input className='inputDadosProduto'
+                        placeholder='Categoria' value={this.state.inputCategoria} onChange={this.onChangeInputCategoria}>                        
+                        </input>
 
-                    <input 
-                    placeholder='Categoria' value={this.state.inputCategoria} onChange={this.onChangeInputCategoria}>                        
-                    </input>
+                        <input className='inputDadosProduto'
+                        placeholder='Número de Parcelas' type='number' value={this.state.inputParcelas} onChange={this.onChangeInputParcelas}>                        
+                        </input>
+                    </div>
 
-                    <input 
-                    placeholder='Número de Parcelas' type='number' value={this.state.inputParcelas} onChange={this.onChangeInputParcelas}>                        
-                    </input>
+                    <div>
+                        <input className='inputDadosProduto'
+                        placeholder='URL Imagem 1' value={this.state.inputImagem1} onChange={this.onChangeInputImagem1}>                        
+                        </input>
 
-                    <input 
-                    placeholder='URL Imagem 1' value={this.state.inputImagem1} onChange={this.onChangeInputImagem1}>                        
-                    </input>
+                        <input className='inputDadosProduto'
+                        placeholder='URL Imagem 2' value={this.state.inputImagem2} onChange={this.onChangeInputImagem2}>                        
+                        </input>
 
-                    <input 
-                    placeholder='URL Imagem 2' value={this.state.inputImagem2} onChange={this.onChangeInputImagem2}>                        
-                    </input>
+                        <input className='inputDadosProduto'
+                        placeholder='URL Imagem 3' value={this.state.inputImagem3} onChange={this.onChangeInputImagem3}>                        
+                        </input>
 
-                    <input 
-                    placeholder='URL Imagem 3' value={this.state.inputImagem3} onChange={this.onChangeInputImagem3}>                        
-                    </input>
-
-                    <input 
-                    placeholder='URL Imagem 4' value={this.state.inputImagem4} onChange={this.onChangeInputImagem4}>                        
-                    </input>
-
+                        <input className='inputDadosProduto'
+                        placeholder='URL Imagem 4' value={this.state.inputImagem4} onChange={this.onChangeInputImagem4}>                        
+                        </input>
+                    </div>
+                    
                    
 
                 </div>
