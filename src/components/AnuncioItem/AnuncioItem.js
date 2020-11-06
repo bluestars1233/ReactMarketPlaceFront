@@ -42,14 +42,12 @@ class AnuncioItem extends React.Component{
         })
 
         return(
-            <div>
+           <div>
                 {renderizarImgPreco}
                 <DetalheItem />
-            </div>
-
-            
-                
-            
+=======
+            <div>        
+         </div>                                        
         )
     }
 }

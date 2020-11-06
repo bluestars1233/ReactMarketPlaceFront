@@ -1,0 +1,25 @@
+  .tituloQuemSomos{
+    color: #44A6A4;
+    margin-top: 20px;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .subTituloProposito {
+    color: #a3a09d;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 2em;
+  }
+
+  .paragrafoQuemSomos {
+    text-align: justify;
+    font-size:1.9em;
+    color: #a3a09d;
+    margin-top: 20px;
+    padding: 20px;
+  } 
+
+  #tamanhoDiv {
+    height: 65vh;
+  }
