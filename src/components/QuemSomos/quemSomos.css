@@ -1,0 +1,37 @@
+@font-face {font-family: "SultanNahiaW20"; src: url("//db.onlinewebfonts.com/t/9343496bb158886797785c1dfe92365f.eot"); src: url("//db.onlinewebfonts.com/t/9343496bb158886797785c1dfe92365f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9343496bb158886797785c1dfe92365f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9343496bb158886797785c1dfe92365f.woff") format("woff"), url("//db.onlinewebfonts.com/t/9343496bb158886797785c1dfe92365f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9343496bb158886797785c1dfe92365f.svg#SultanNahiaW20") format("svg"); }
+
+*{
+  margin:0;
+  padding:0;  
+  font-family: SultanNahiaW20;
+}
+
+  h1 {
+    color: #44A6A4;
+    margin-top: 20px;
+    font-size: 3em;
+  }
+
+  h2 {
+    color: #a3a09d;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 2em;
+  }
+
+  p {
+    text-align: justify;
+    font-size:1.9em;
+    color: #a3a09d;
+    margin-top: 20px;
+    padding: 10px;
+  } 
+
+  .divTitulo {
+    text-align: center;
+  }
+
+  #tamanhoDiv {
+    height: 60vh;
+
+  }
