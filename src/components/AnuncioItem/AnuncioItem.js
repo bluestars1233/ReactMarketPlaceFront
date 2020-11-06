@@ -1,9 +1,18 @@
 import axios from 'axios';
-import React from 'react'
+import React from 'react';
+import DetalheItem from '../DetalheItem/DetalheItem';
+import './AnuncioItem.css'
+
 
 class AnuncioItem extends React.Component{
     state = {
-        products: []
+        listaProdutos: [],
+        telaDetalheProduto: []
+    }
+
+    mudaParaDetalheProduto = () => {
+        this.setState({telaDetalheProduto: <DetalheItem /> })
+        console.log('to clicando aqui')
     }
 
 
@@ -12,20 +21,22 @@ class AnuncioItem extends React.Component{
     }
 
     pegarImgPreco = () => {
-        axios.get('https://us-central1-labenu-apis.cloudfunctions.net/fourUsedOne/products').then((res) => {
-        this.setState({ products: res.data})
+        axios.get('https://us-central1-labenu-apis.cloudfunctions.net/fourUsedOne/products').then((res) => { 
+        this.setState({ listaProdutos: res.data.products})
         }).catch((erro) => {
             console.log(erro.message)
         })
     }
 
+    // console.log(res)
 
     render(){
-        const renderizarImgPreco = this.state.products.map((produto) => {
+        const renderizarImgPreco = this.state.listaProdutos.map((produto) => {
         return (
-            <div> 
-            <p>{produto.photo}</p>
-            <p>{produto.price}</p>
+            <div className='container-img-preco'> 
+                <img key={produto.id} src={produto.photos} onClick={this.mudaParaDetalheProduto} 
+                />
+                <p key={produto.id}>R$ {produto.price}</p>
             </div>
         )
         })
@@ -33,7 +44,12 @@ class AnuncioItem extends React.Component{
         return(
             <div>
                 {renderizarImgPreco}
+                <DetalheItem />
             </div>
+
+            
+                
+            
         )
     }
 }
