@@ -9,7 +9,7 @@ class Contato extends React.Component{
                 <h2 className='subTituloContatos'>Deixe seu feedback</h2>
                 <p className='paragrafoAreas'>Nome</p>
                 <input type="text" className="inputNome" ></input>
-                <p className='paragrafoAreas'className='paragrafoAreas'>Deixe sua mensagem</p>
+                <p className='paragrafoAreas'>Deixe sua mensagem</p>
                 <input type="text" className="inputMensagem"></input>
                 <br></br>
                 <button>Enviar</button>

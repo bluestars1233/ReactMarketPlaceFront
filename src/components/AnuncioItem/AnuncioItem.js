@@ -13,34 +13,39 @@ class AnuncioItem extends React.Component{
         console.log('to clicando aqui')
     }
 
-
     componentDidMount = () => {
         this.pegarImgPreco()
     }
 
     pegarImgPreco = () => {
-        axios.get('https://us-central1-labenu-apis.cloudfunctions.net/fourUsedOne/products').then((res) => { 
+        axios.get('https://us-central1-labenu-apis.cloudfunctions.net/fourUsedOne/products')
+        .then((res) => { 
         this.setState({ listaProdutos: res.data.products})
-        }).catch((erro) => {
+        })
+        .catch((erro) => {
             console.log(erro.message)
         })
     }
     
     render(){
         const renderizarImgPreco = this.state.listaProdutos.map((produto) => {
-        return (
-            <div className='container-img-preco'> 
-                <img key={produto.id} src={produto.photos} onClick={this.mudaParaDetalheProduto} 
-                />
-                <p key={produto.id}>R$ {produto.price}</p>
-            </div>
-        )
+            if(produto.category==='4used'){
+                return (
+                    <div key={produto.id}>                                                             
+                        <img className='imagemProduto' src={produto.photos[0]} alt='produto' onClick={this.mudaParaDetalheProduto}/>
+                        <div className='fundo'> 
+                            <p className='precoProduto'>R$ {produto.price}</p>                        
+                        </div>                        
+                    </div>
+                    
+                )
+            }
         })
 
         return(
-           <div>
+            <div className='divContainerImagemPreco'>
                 {renderizarImgPreco}                                   
-         </div>                                        
+            </div>                                        
         )
     }
 }
