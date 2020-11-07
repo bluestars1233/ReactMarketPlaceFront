@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React from 'react';
-import DetalheItem from '../DetalheItem/DetalheItem';
 import './AnuncioItem.css'
 
 
@@ -10,8 +9,7 @@ class AnuncioItem extends React.Component{
         telaDetalheProduto: []
     }
 
-    mudaParaDetalheProduto = () => {
-        this.setState({telaDetalheProduto: <DetalheItem /> })
+    mudaParaDetalheProduto = () => {        
         console.log('to clicando aqui')
     }
 
@@ -27,9 +25,7 @@ class AnuncioItem extends React.Component{
             console.log(erro.message)
         })
     }
-
-    // console.log(res)
-
+    
     render(){
         const renderizarImgPreco = this.state.listaProdutos.map((produto) => {
         return (
@@ -43,9 +39,7 @@ class AnuncioItem extends React.Component{
 
         return(
            <div>
-                {renderizarImgPreco}
-                <DetalheItem />
-=======
+                {renderizarImgPreco}                                   
          </div>                                        
         )
     }
