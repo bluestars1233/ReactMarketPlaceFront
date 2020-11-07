@@ -8,24 +8,30 @@
 }
 .flexNomeDescricao{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    margin: 0 auto;
 }
 .flexPagamentoPreco{
-    display: flex;        
-    align-items: center;
+    display: flex; 
+    flex-direction: column;                 
+    margin: 0 auto;
 }
-
+.flexLabelPagamentoPreco{
+    display: flex;
+    justify-content: flex-start;            
+    margin: 0 13px;
+}
 .inputDadosProduto{
-    margin: 10px auto;
-    width: 15vw;
-    height: 3vh;
+    margin: 10px 13px;
+    width: 9vw;
+    height: 3vh;        
 }
 .inputNomeDescricao{
-    margin: 10px auto;    
+    margin: 5px auto;    
     height: 3vh;
     width: 20vw;
 }
-button{
+.botaoEnviar{
     background-color: #449694;
     border: none;
     border-radius: 10px;
@@ -35,4 +41,10 @@ button{
     color: #FFFCEF;
     width: 15vw;
     height: 8vh;
+}
+.margemLabelPreco{
+    margin-left: 35px;
+}
+.margemLabelParcela{
+    margin-left: 100px;
 }
