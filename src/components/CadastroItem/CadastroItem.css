@@ -1,10 +1,18 @@
 #DivInputCadastro {
     display: flex;
     flex-direction: column;
+    margin-top:45px;
+    margin-bottom:45px;
+    color:#a3a09d;
 }
 #DivButtonCadastro{
-    display: flex;
-    
+    display: flex;    
+}
+#divInputImagens{
+    margin: 0 auto;
+}
+.margemTituloImagens{
+    margin-left:13px ;
 }
 .flexNomeDescricao{
     display: flex;
@@ -41,6 +49,10 @@
     color: #FFFCEF;
     width: 15vw;
     height: 8vh;
+}
+button:hover{
+    background-color: #44A6A4;
+    color: #FFECEF;
 }
 .margemLabelPreco{
     margin-left: 35px;

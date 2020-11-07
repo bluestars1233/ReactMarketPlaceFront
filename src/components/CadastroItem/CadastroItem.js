@@ -132,7 +132,10 @@ class CadastroItem extends React.Component{
                         
                     </div>
 
-                    <div>
+                    <div id='divInputImagens'>
+                        <div className='margemTituloImagens'>
+                            <h2>Insira as imagens dos produtos</h2>
+                        </div>
                         <div>
                             <input className='inputDadosProduto'
                             placeholder='URL Imagem 1' value={this.state.inputImagem1} onChange={this.onChangeInputImagem1}>                        
@@ -151,8 +154,7 @@ class CadastroItem extends React.Component{
                             <input className='inputDadosProduto'
                             placeholder='URL Imagem 4' value={this.state.inputImagem4} onChange={this.onChangeInputImagem4}>                        
                             </input>
-                        </div>
-                        
+                        </div>                        
                     </div>                                       
                 </div>
                 <div id='DivButtonCadastro'>
