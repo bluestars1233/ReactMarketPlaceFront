@@ -60,7 +60,7 @@ footer > div > a{
   width: 20px;    
   cursor: pointer;
   margin-top: 10px;
-  
+  padding: 0 10px;
 }
 
 /*--------Componente Home-----------------------*/

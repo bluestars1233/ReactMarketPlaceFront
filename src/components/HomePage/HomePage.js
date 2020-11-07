@@ -56,13 +56,15 @@ class HomePage extends React.Component{
                     return <CadastroItem/>
                 case '4':
                     return <AnuncioItem/>
+                default :
+                    return<HomePage/>
 			}											
 		}       
         return(
             <div>
                 <header>
 					<div>
-						<img className="imgLogoCabecalho" src={logoCabecalho}></img>
+						<img className="imgLogoCabecalho" alt='logo' src={logoCabecalho}></img>
 					</div>					
 					<nav>
 						<p onClick={this.onClickHomePage}>Home</p>
@@ -76,11 +78,11 @@ class HomePage extends React.Component{
 						<p>Siga-nos nas redes</p>
 					</div>
 					<div>
-						<a href="https://www.facebook.com/vinicius.moraes.5623293/"target="_blank"><img class="tamanho-icone" src={iconeFacebook} alt="Face"/></a>
+						<img className="tamanho-icone" src={iconeFacebook} alt="Face"/>
 
-						<a href="https://www.instagram.com/vinivetetos/" target="_blank"><img class="tamanho-icone" src={iconeInstagram} alt="Insta" /></a>
+						<img className="tamanho-icone" src={iconeInstagram} alt="Insta" />
 
-						<a href="" target="_blank"><img class="tamanho-icone" src={iconeLinkedin}alt="Linkedin"/></a>
+						<img className="tamanho-icone" src={iconeLinkedin} alt="Linkedin"/>
 					</div>
                     <div>
 						4USED - Todos os direitos reservados - 2020
