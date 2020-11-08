@@ -1,6 +1,6 @@
 import React from 'react'
 import './DetalheItem.css'
-export class DetalheItem extends React.Component {    
+class DetalheItem extends React.Component {    
     render() {                                   
         return (
             <div id='containerDetalheItem'>   
@@ -28,6 +28,5 @@ export class DetalheItem extends React.Component {
                 </div>                                         
             </div>
         )
-    }
 }
 export default DetalheItem
