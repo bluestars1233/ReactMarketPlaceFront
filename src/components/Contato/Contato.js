@@ -20,7 +20,6 @@ class Contato extends React.Component{
                 <h2 className='subTituloContatos'>Contato</h2>
                 <p className='paragrafoAreas'>Telefone: (11) 99999-8877</p>
                 <p className='paragrafoAreas'>E-mail: 4used@gmail.com</p>
-
             </div>
 
         </div>
