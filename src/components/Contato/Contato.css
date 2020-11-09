@@ -47,15 +47,18 @@
   height: 15vh;
 }
 
-button {
+.botaoEnviarContato {
   width: 10vw;
   height: 6vh;
   margin-top: 15px;
   background-color: #449694;
-  color: #ffecef;
+  color: #FFF;
   font-size: 1.5em;
   border: none;
-  border-radius: 10px;
-  align-items: center;
+  border-radius: 10px;  
   cursor: pointer;
+}
+button:hover.botaoEnviarContato{
+    background-color: #44A6A4;
+    color: #FFECEF;
 }

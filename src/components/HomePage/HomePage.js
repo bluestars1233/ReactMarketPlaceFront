@@ -4,6 +4,7 @@ import CadastroItem from '../CadastroItem/CadastroItem'
 import AnuncioItem from '../AnuncioItem/AnuncioItem'
 import QuemSomos from '../QuemSomos/QuemSomos'
 import Contato from '../Contato/Contato'
+import Carrinho from '../Carrinho/Carrinho'
 import logoCabecalho from '../../img/logo-cabecalho.png'
 import iconeFacebook from '../../img/icon-facebook.svg'
 import iconeInstagram from '../../img/icon-instagram.svg'
@@ -28,6 +29,9 @@ class HomePage extends React.Component{
     onClickComprar = ()=>{
         this.setState({chamarComponente:'4'})        
     }    				
+    onClickCarrinho = ()=>{
+        this.setState({chamarComponente:'5'})
+    }
     render(){
         const trocarComponente = ()=>{
 			switch (this.state.chamarComponente){
@@ -56,6 +60,8 @@ class HomePage extends React.Component{
                     return <CadastroItem/>
                 case '4':
                     return <AnuncioItem/>
+                case '5':
+                    return <Carrinho/>
                 default :
                     return<HomePage/>
 			}											
@@ -70,6 +76,7 @@ class HomePage extends React.Component{
 						<p onClick={this.onClickHomePage}>Home</p>
 						<p onClick={this.onClickQuemSomos}>Quem somos</p>
 						<p onClick={this.onClickContato}>Contato</p>
+                        <p onClick={this.onClickCarrinho}>Carrinho</p>
 					</nav>
 				</header>
                 {trocarComponente()}
