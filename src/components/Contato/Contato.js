@@ -12,7 +12,7 @@ class Contato extends React.Component{
                 <p className='paragrafoAreas'>Deixe sua mensagem</p>
                 <input type="text" className="inputMensagem"></input>
                 <br></br>
-                <button>Enviar</button>
+                <button className='botaoEnviarContato'>Enviar</button>
                 
             </div>
 
