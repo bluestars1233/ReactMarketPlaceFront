@@ -158,7 +158,7 @@ class CadastroItem extends React.Component{
                     </div>                                       
                 </div>
                 <div id='DivButtonCadastro'>
-                    <button className='botaoEnviar' onClick={this.criarProduto}>Enviar</button>
+                    <button className='botaoEnviarCadastro' onClick={this.criarProduto}>Enviar</button>
                 </div>                
                 
             </div>
