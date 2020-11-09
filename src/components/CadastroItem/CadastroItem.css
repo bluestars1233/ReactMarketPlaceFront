@@ -39,7 +39,7 @@
     height: 3vh;
     width: 20vw;
 }
-.botaoEnviar{
+.botaoEnviarCadastro{
     background-color: #449694;
     border: none;
     border-radius: 10px;
@@ -50,7 +50,7 @@
     width: 15vw;
     height: 8vh;
 }
-button:hover{
+button:hover.botaoEnviarCadastro{
     background-color: #44A6A4;
     color: #FFECEF;
 }
