@@ -1,10 +1,14 @@
 import React from 'react'
-import { AppContainer } from './components/AppContainer'
+import HomePage from './components/HomePage/HomePage'
+import './index.css'
 
-function App() {
-	return (
-        <AppContainer />
-	)
+class App extends React.Component {			
+	render(){				
+		return (
+			<div>				
+				<HomePage/>								
+			</div>
+		)
+	}
 }
-
 export default App
