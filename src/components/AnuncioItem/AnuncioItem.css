@@ -1,0 +1,24 @@
+.divContainerImagemPreco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    column-gap: 10px;
+    margin: 10px;
+}
+.imagemProduto{    
+    position: relative;
+    width:300px;
+    height: 300px;
+    border: 5px solid #449694;    
+    border-radius: 5px;
+    cursor: pointer;
+}
+.precoProduto{     
+    position: absolute;   
+    width: 50px;    
+    padding: 2px 0 2px 5px;
+    background-color: #449694;
+    border-radius: 10px;
+    margin-top: -30px;        
+    color: #FFFCEF;
+    text-shadow: 0 0 10px black;    
+}
